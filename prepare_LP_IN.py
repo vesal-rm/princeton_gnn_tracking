@@ -121,8 +121,8 @@ def construct_graph(hits, layer_pairs, phi_slope_max, z0_max,
     a = np.zeros(n_edges, dtype=np.float32)
     
     # MODIFY
-    with open("pid_truth_vectors/"+str(evtid)+"_truth.pkl", 'wb') as truth_file:
-        pickle.dump(hits.particle_id.values, truth_file)
+    #with open("pid_truth_vectors/"+str(evtid)+"_truth.pkl", 'wb') as truth_file:
+    #    pickle.dump(hits.particle_id.values, truth_file)
 
     # We have the segments' hits given by dataframe label,
     # so we need to translate into positional indices.
